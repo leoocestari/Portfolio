@@ -1,0 +1,39 @@
+.container {
+  padding: 5px 180px;
+  width: 100%;
+  backdrop-filter: blur(10px); 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(221, 214, 214, 0.199);
+}
+
+.logotipo{
+  width: 50px;
+}
+.menu {
+  display: flex;
+  gap: 32px;
+  font-family: 'Lemon Days', sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  color: white;
+  font-weight: 350;
+  font-size: 24px;
+}
+
+.action{
+  text-align: end;
+}
+
+.button{
+  padding: 15px 50px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: lightsalmon;
+  border: none;
+}
+
+
