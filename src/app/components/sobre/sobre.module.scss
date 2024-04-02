@@ -1,0 +1,48 @@
+@import "/styles/mixins/padding.scss";
+
+.container {
+  @include Padding;
+  padding-top: 100px;
+  text-align: center;
+  background-color: black;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+
+};
+
+.image{
+  animation: flutuando 5s ease-in-out infinite alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flutuando {
+  0% {
+      transform: translatey(0px) ;
+  }
+  50%{
+      transform: translatey(-30px) rotate(0deg);
+  }
+  100%{
+      transform: translatey(0px) rotate(0deg);
+  }
+}
+
+.text{
+  h1{
+    font-weight: bold;
+    font-size: 3.6rem;
+  }
+
+  p{
+    font-size: 1.4rem;
+    -webkit-box-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+}

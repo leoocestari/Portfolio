@@ -9,7 +9,7 @@ const Header = () => {
    <div className={Styles.container}>
     <div className={Styles.logotipo}> 
     <Image src={Logo} 
-    width={100}/>
+    width={60}/>
     
      
     </div>

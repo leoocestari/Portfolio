@@ -3,7 +3,7 @@
 .container {
   @include Padding;
   color: aliceblue;
-  padding-top: 5px;
+  padding-top: 1px;
   width: 100%;
   background-color: black;
   display: grid;
@@ -13,7 +13,7 @@
 }
 
 .logotipo{
-  width: 50px;
+  width: 15px;
 }
 .menu {
   a + a {
@@ -23,8 +23,8 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   color: white;
-  font-weight: 350;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 22px;
 }
 
 .action{
