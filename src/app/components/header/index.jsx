@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "/public/images/logo.svg"
 import Link from "next/link";
 import Styles from"./header.module.css"
+import Button from "../button"
 
 const Header = () => {
   return (
@@ -25,7 +26,8 @@ const Header = () => {
 
     </nav>
     <div className={Styles.action}>
-      <button className={Styles.button} >Curriculo</button>
+      <Button title="fale conosco" />
+      
     </div>
 
   </div>
