@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "/public/images/logo.svg"
 import Link from "next/link";
-import Styles from"./header.module.css"
+import Styles from"./header.module.scss"
 import Button from "../button"
 
 const Header = () => {

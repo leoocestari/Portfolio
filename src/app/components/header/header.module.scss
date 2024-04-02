@@ -1,20 +1,24 @@
+@import "/styles/mixins/padding.scss";
+
 .container {
-  padding: 5px 180px;
+  @include Padding;
+  color: aliceblue;
+  padding-top: 5px;
   width: 100%;
-  backdrop-filter: blur(10px); 
+  background-color: black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: space-between;
-  background: rgba(221, 214, 214, 0.199);
 }
 
 .logotipo{
   width: 50px;
 }
 .menu {
-  display: flex;
-  gap: 32px;
+  a + a {
+    margin-left: 38.9px;
+  }
   font-family: 'Lemon Days', sans-serif;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;

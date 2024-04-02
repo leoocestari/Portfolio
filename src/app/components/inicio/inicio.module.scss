@@ -1,0 +1,47 @@
+@import "/styles/mixins/padding.scss";
+
+.container {
+    @include Padding;
+    padding-top: 100px;
+    background-image: url("/images/iniciobackground.svg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+};
+
+.h1{
+    color: white;
+    font-weight: bold;
+    font-size: 71px;
+};
+
+.p1{
+    color: aliceblue;
+    font-size: 30px;
+    opacity: 0,8;
+};
+
+.image{
+    text-align: end;
+}
+
+.image{
+    animation: flutuando 5s ease-in-out infinite alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flutuando {
+    0% {
+        transform: translatey(0px) ;
+    }
+    50%{
+        transform: translatey(-30px) rotate(0deg);
+    }
+    100%{
+        transform: translatey(0px) rotate(0deg);
+    }
+}
+
