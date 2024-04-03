@@ -8,7 +8,7 @@ const Inicio = () => {
   <div className={Styles.container}>
     <div className={Styles.text}>
       <h1 className={Styles.h1}>Leonardo Cestari</h1>
-      <p className={Styles.p1}>Desenvolvedor e Analista de Sistemas</p>
+      <p className={Styles.p1}>Desenvolvedor</p>
       <Button title="Curriculo" />
     </div>
     <div className={Styles.image}>

@@ -3,7 +3,7 @@ import styles from "./page.module.scss";
 import Header from "../app/components/header"
 import Inicio from "../app/components/inicio"
 import Sobre from "../app/components/sobre"
-import Habilidades from "../app/components/habilidades"
+import Projetos from "./components/projetos"
 
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
     <Header />
     <Inicio />
     <Sobre />
-    <Habilidades />
+    <Projetos />
     </div>
     
   );

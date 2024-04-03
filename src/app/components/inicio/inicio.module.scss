@@ -1,5 +1,6 @@
 @import "/styles/mixins/padding.scss";
 
+
 .container {
     @include Padding;
     padding-top: 100px;
@@ -19,9 +20,10 @@
 };
 
 .p1{
-    color: aliceblue;
+    color: yellowgreen;
     font-size: 2rem;
     opacity: 0,8;
+    text-shadow: yellowgreen 0px 0px 10px;
 };
 
 .image{

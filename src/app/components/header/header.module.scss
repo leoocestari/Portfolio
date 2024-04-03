@@ -1,5 +1,11 @@
 @import "/styles/mixins/padding.scss";
 
+@font-face{
+  font-family: jetbrains;
+
+  src: url("/styles/font/JetBrains_Mono/")
+}
+
 .container {
   @include Padding;
   color: aliceblue;
@@ -19,7 +25,7 @@
   a + a {
     margin-left: 38.9px;
   }
-  font-family: 'Lemon Days', sans-serif;
+  font-family: jetbrains;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   color: white;

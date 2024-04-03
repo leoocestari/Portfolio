@@ -3,11 +3,9 @@
 .container {
   @include Padding;
   padding-top: 100px;
-  text-align: center;
   background-color: black;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-
 };
 
 .image{
@@ -28,6 +26,7 @@
 }
 
 .text{
+  margin-top: 8px 0;
   h1{
     font-weight: bold;
     font-size: 3.6rem;

@@ -1,14 +1,15 @@
-import Styles from "./habilidades.module.scss"
+import Styles from "./projetos.module.scss"
 import Image from "next/image"
 import Desenvolvedor from "/public/images/desenvolvedor.svg"
 
 
-const Habilidades = () => {
+const Projetos = () => {
   return(
   <div className={Styles.container}>
-    <h1>habilidades</h1>
+    <h1>projetos</h1>
   </div>
   );
 };
 
-export default Habilidades
+export default Projetos
+
