@@ -8,12 +8,12 @@ import Projetos from "./components/projetos"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
     <Header />
     <Inicio />
     <Sobre />
     <Projetos />
-    </div>
+    </main>
     
   );
 }

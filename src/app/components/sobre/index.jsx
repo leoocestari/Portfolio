@@ -1,14 +1,14 @@
 import Styles from "./sobre.module.scss"
 import Image from "next/image"
-import Desenvolvedor from "/public/images/desenvolvedor.svg"
+import Pessoa from "/public/images/pessoa4.svg"
 
 
 const Sobre = () => {
   return(
   <div className={Styles.container}>
     <div className={Styles.image}>
-    <Image src={Desenvolvedor} alt="fundo"
-    width={600}/>
+    <Image src={Pessoa} alt="fundo"
+    width={450}/>
     
     </div>
     <div className={Styles.text}>

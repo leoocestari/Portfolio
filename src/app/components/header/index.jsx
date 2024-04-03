@@ -6,12 +6,10 @@ import Button from "../button"
 
 const Header = () => {
   return (
-   <div className={Styles.container}>
+   <section className={Styles.container}>
     <div className={Styles.logotipo}> 
     <Image src={Logo} 
     width={60}/>
-    
-     
     </div>
     <nav className={Styles.menu}>
           <Link href="/">Inicio</Link>
@@ -30,7 +28,7 @@ const Header = () => {
       
     </div>
 
-  </div>
+  </section>
   
   );
 };
