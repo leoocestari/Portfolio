@@ -3,6 +3,7 @@ import Button from "../button"
 import Desenvolvedor from "/public/images/desenvolvedor.svg"
 import Image from "next/image"
 
+
 const Inicio = () => {
   return (
   <section className={Styles.container}>

@@ -1,0 +1,125 @@
+@import "/styles/mixins/padding.scss";
+
+.container {
+  @include Padding;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: black;
+  display:grid;
+};
+
+.header{
+  text-align: center;
+  h1{
+    font-size: 2.8rem;
+  }
+}
+
+.habs{
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+.card{
+
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: #121212;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.card2{
+
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: #121212;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+
+ .card3{
+
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: #121212;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+
+ .card4{
+
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: #121212;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+
+ .cardimage{
+  place-content: center;
+  display: grid;
+ }
+
+ .carddetails{
+  padding-bottom: 50px;
+
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+
+    p{
+      font-size: 1rem;
+      color: #f5f5f5;
+    }
+   
+ }
+
+ .card:hover{
+  animation: botao 1s ease-in-out infinite alternate;
+  animation-iteration-count: infinite;
+}
+
+.card2:hover{
+  animation: botao 1s ease-in-out infinite alternate;
+  animation-iteration-count: infinite;
+}
+
+.card3:hover{
+  animation: botao 1s ease-in-out infinite alternate;
+  animation-iteration-count: infinite;
+}
+
+.card4:hover{
+  animation: botao 1s ease-in-out infinite alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes botao{
+0%{
+  transform: scale(1);
+}
+100%{
+  transform: scale(1.08);
+}
+}
+

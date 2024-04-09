@@ -2,7 +2,7 @@
 
 .container{
   width: 100%;
-  max-width: 1440px;
+  max-width: 800px;
   margin: 0 auto;
   padding-bottom: 150px;
 }
@@ -12,10 +12,35 @@
   margin: 24px 0
 }
 
-.slide-item{
-  align-items: center;
+.slidecontainer{
+  text-align: center;
+  border-radius: 25px;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  background-color: black;
+  padding: 40px 0;
+
+}
+
+.slideco{
+margin: 0 40px;
+  width: 320px;
+  border-radius: 25px;
+  background-color: aliceblue;
+}
+
+.slide1{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.text{
+  h1{
+    font-size: 2.8rem;
+    text-align: center;
+
+  }
 }
 

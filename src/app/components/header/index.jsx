@@ -12,7 +12,7 @@ const Header = () => {
     width={60}/>
     </div>
     <nav className={Styles.menu}>
-          <Link href="">Inicio</Link>
+          <Link href="./">Inicio</Link>
 
           <Link href="./">Sobre</Link>
 
