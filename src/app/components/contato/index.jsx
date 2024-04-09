@@ -5,20 +5,19 @@ import Pessoa from "/public/images/pessoa4.svg"
 const Contato = () => {
   return(
   <div className={Styles.container}>
+    <div className={Styles.header}>
+      <h1>Contato</h1>
+    </div>
     <div className={Styles.image}>
     <Image src={Pessoa} alt="fundo"
     width={450}/>
     
     </div>
     <div className={Styles.text}>
-    <h1>Sobre Mim</h1>
-    <p>Meu nome é Leonardo Cestari, desde pequeno sempre tive interesse pela
-      área da computação, decidi trilhar o caminho da programação. Criando 
-      projetos usando o conhecimento adquirido em meus estudos.
+    <p>1
     </p>
     <p>
-      Atualmente cursando análise e desenvolvimento de sistemas e focando em
-      adquirir experiencia na área.
+      1
     </p>
     </div>
   </div>

@@ -19,8 +19,8 @@ const Habilidades = () => {
       <Image src={Logo} width={100}></Image>
       </div>
       <div className={Styles.carddetails}>
-      <p>HTML/CSS/JAVASCRIPT</p>
-      <p>blabladasdasda</p>
+      <p>Html, Css, JavaScript</p>
+      <p>É a trindade base da programação web</p>
       </div>
     </div>
     <div className={Styles.card2}>

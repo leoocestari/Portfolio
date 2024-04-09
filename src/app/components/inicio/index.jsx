@@ -8,8 +8,8 @@ const Inicio = () => {
   return (
   <section className={Styles.container}>
     <div className={Styles.text}>
-      <h1 className={Styles.h1}>Leonardo Cestari</h1>
-      <p className={Styles.p1}>Desenvolvedor</p>
+      <h1>Leonardo Cestari</h1>
+      <p>Desenvolvedor</p>
       <Button title="Curriculo" />
     </div>
     <div className={Styles.image}>

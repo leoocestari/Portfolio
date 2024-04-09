@@ -123,3 +123,20 @@
 }
 }
 
+.cardimage{
+  animation: flutuando 5s ease-in-out infinite alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flutuando {
+  0% {
+      transform: translatey(0px) ;
+  }
+  50%{
+      transform: translatey(-10px) rotate(0deg);
+  }
+  100%{
+      transform: translatey(0px) rotate(0deg);
+  }
+}
+

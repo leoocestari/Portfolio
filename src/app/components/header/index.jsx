@@ -24,7 +24,7 @@ const Header = () => {
 
     </nav>
     <div className={Styles.action}>
-      <Button title="fale conosco" />
+      <Button title="Contato" />
       
     </div>
 

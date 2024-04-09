@@ -3,32 +3,40 @@
 
 
 .container {
-    @include Padding;
+    padding: 0 20.25rem;
     padding-top: 100px;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 2rem 0px;
     
 };
 
-.h1{
+.text{
+   
+
+h1{
     margin: 0;
     color: #ffffff;
     font-weight: bold;
     font-size: 3.6rem;
     padding-top: 2rem;
-};
+}
 
-.p1{
+p{
     color: #9acd32;
     font-size: 2rem;
     opacity: 0,8;
     text-shadow: yellowgreen 0px 0px 10px;
+    margin-top: -1.5rem;
+    position: relative;
+}
 };
 
 .image{
+    
     text-align: end;
 }
 
