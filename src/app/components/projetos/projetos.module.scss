@@ -2,39 +2,16 @@
 
 
 .container{
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-bottom: 150px;
+  @include Padding;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #121212;
+  
 }
 
 .title{
   text-align: center;
   margin: 24px 0
-}
-
-.slidecontainer{
-  text-align: center;
-  border-radius: 25px;
-  width: 100%;
-  background-color: black;
-  padding: 40px 0;
-
-}
-
-.slideco{
-margin: 0 40px;
-  width: 320px;
-  border-radius: 25px;
-  background-color: aliceblue;
-}
-
-.slide1{
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
 }
 
 .text{
@@ -43,5 +20,34 @@ margin: 0 40px;
     text-align: center;
 
   }
+}
+
+.projetos{
+  padding-top: 100px;
+  
+}
+
+.projeto1{
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: black;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.projeto2{
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: black;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
 }
 

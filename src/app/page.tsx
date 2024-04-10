@@ -21,16 +21,26 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/free-mode';
 
 
+
+
+
+
+
+
 export default function Home() {
   return (
     <main className={styles.container}>
+      
     <Header />
     <Inicio />
     <Sobre />
     <Projetos />
     <Habilidades />
     <Contato />
+
+    
     </main>
+    
     
   );
 }
