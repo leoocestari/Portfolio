@@ -1,12 +1,12 @@
 @import "/styles/mixins/padding.scss";
 
 
-.container{
+.container {
   @include Padding;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #121212;
-  
+  display:grid;
 }
 
 .title{
@@ -18,18 +18,26 @@
   h1{
     font-size: 2.8rem;
     text-align: center;
-
   }
 }
 
 .projetos{
+
   padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
   
 }
 
-.projeto1{
-  width: 250px;
-  height: 350px;
+.projetos2{
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+.projectcard1{
+  width: 550px;
+  height: 550px;
   border-radius: 20px;
   background: black;
   position: relative;
@@ -39,9 +47,9 @@
   overflow: visible;
 }
 
-.projeto2{
-  width: 250px;
-  height: 350px;
+.projectcard2{
+  width: 550px;
+  height: 550px;
   border-radius: 20px;
   background: black;
   position: relative;
@@ -51,3 +59,48 @@
   overflow: visible;
 }
 
+.projectcard3{
+  width: 550px;
+  height: 550px;
+  border-radius: 20px;
+  background: black;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.projectcard4{
+  width: 550px;
+  height: 550px;
+  border-radius: 20px;
+  background: black;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.acessar{
+  padding-top: 200px;
+
+}
+
+.cardimage{
+  border-radius: 20px;
+  border: 2px solid #121212;
+  background-color: #121212;
+  padding-top: 50px;
+
+
+ text-align: center;
+  height: 380px;
+  align-items: center;
+}
+
+.carddetails{
+  padding-top: 25px;
+
+}
