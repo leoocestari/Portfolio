@@ -1,4 +1,5 @@
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
 
 .container {
   @include Padding;
@@ -7,7 +8,21 @@
   background-color: black;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @include Phone{
+    padding-top: 50px;
+    padding-bottom: 75px;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+}
 };
+
+.image{
+  
+  @include Phone{
+    display: none;
+}
+}
 
 .image{
   animation: flutuando 5s ease-in-out infinite alternate;
@@ -31,6 +46,10 @@
   h1{
     font-weight: bold;
     font-size: 3.6rem;
+    @include Phone{
+      text-align: center;
+      font-size: 2rem;
+  }
   }
 
   p{
@@ -44,5 +63,10 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+
+    @include Phone{
+      font-size: 1.2rem;
+      text-align: center;
+  }
   }
 }

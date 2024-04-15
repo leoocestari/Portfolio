@@ -1,3 +1,9 @@
+@import "./responsive.scss";
+
 @mixin Padding{
   padding: 0 11.25rem; //1 rem = 16px
+
+  @include Phone {
+    padding: 0 1rem;
+  }
 }

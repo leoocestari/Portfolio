@@ -36,9 +36,9 @@ export default function Home() {
     <Header />
     <Inicio />
     <Sobre />
-    <Projetos />
-    <Habilidades />
-    <Contato />
+    {<Projetos />}
+    {/*<Habilidades />*/}
+    {/*<Contato />*/}
 
     
     </main>

@@ -55,7 +55,7 @@ function Projetos() {
         <div className={Styles.projectcard3}>
           <div className={Styles.cardimage}>
           <Image src={Construindo} width={300} alt='projeto1'></Image>
-      </div>
+      </div> 
       <div className={Styles.carddetails}>
             <h1>Em andamento</h1>
           </div>

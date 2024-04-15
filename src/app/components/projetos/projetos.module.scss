@@ -1,4 +1,5 @@
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
 
 
 .container {
@@ -7,6 +8,13 @@
   padding-bottom: 100px;
   background-color: #121212;
   display:grid;
+
+  @include Phone{
+    padding-top: 50px;
+    padding-bottom: 75px;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+}
 }
 
 .title{
@@ -26,6 +34,11 @@
   padding-top: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
+  @include Phone{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    
+}
   
 }
 
@@ -33,6 +46,11 @@
   padding-top: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
+  @include Phone{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    
+}
 }
 
 .projectcard1{
@@ -45,6 +63,13 @@
   border: 2px solid #121212;
   transition: 0.5s ease-out;
   overflow: visible;
+
+  @include Phone{
+    width: 250px;
+    height: 250px;
+    
+}
+  
 }
 
 .projectcard2{
@@ -57,6 +82,12 @@
   border: 2px solid #121212;
   transition: 0.5s ease-out;
   overflow: visible;
+
+  @include Phone{
+    width: 250px;
+    height: 250px;
+    
+}
 }
 
 .projectcard3{
@@ -69,6 +100,16 @@
   border: 2px solid #121212;
   transition: 0.5s ease-out;
   overflow: visible;
+
+  @include Phone{
+    width: 250px;
+    height: 250px;
+    
+}
+}
+
+.image{
+  width: 250vh;
 }
 
 .projectcard4{
@@ -81,6 +122,12 @@
   border: 2px solid #121212;
   transition: 0.5s ease-out;
   overflow: visible;
+
+  @include Phone{
+    width: 250px;
+    height: 250px;
+    
+}
 }
 
 .acessar{
@@ -98,6 +145,7 @@
  text-align: center;
   height: 380px;
   align-items: center;
+  
 }
 
 .carddetails{

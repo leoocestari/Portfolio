@@ -5,7 +5,7 @@ import Button from "../button"
 import Githicon from "/public/images/githicon.svg"
 import Linkicon from "/public/images/linkicon.svg"
 
-const Contato = () => {
+function Contato () {
   return(
   <div className={Styles.container}>
     <div className={Styles.header}>
@@ -13,24 +13,25 @@ const Contato = () => {
     </div>
     <div className={Styles.abacontato}>
     <form className={Styles.formulario}>
-      <input required placeholder="Digite seu nome" type="text" class="nome">
+      <input required placeholder="Digite seu nome" type="text" className="nome">
       </input>
-      <input required placeholder="Digite seu email" type="email" class="emailclass">
+      <input required placeholder="Digite seu email" type="email" className="emailclass">
       </input>
-      <input required placeholder="Digite o assunto" type="text" class="assuntoo">
+      <input required placeholder="Digite o assunto" type="text" className="assuntoo">
       </input>
-      <textarea required placeholder="Sua mensagem..." cols={30} rows={10} class="textarea"></textarea>
+      <textarea required placeholder="Sua mensagem..." cols={30} rows={10} className="textarea"></textarea>
       <Button title="Enviar"/>
       
     </form>
     <div className={Styles.contatoadicional}>
       <h1>E-mail para contato</h1>
-      <p1>leonardocestari67@gmail.com</p1>
+      <p>leonardocestari67@gmail.com</p>
       <h1>Redes Sociais</h1>
       <div className={Styles.redes}>
       <div className={Styles.gitrede}>
       <div className={Styles.boxicon}>
-      <Image src={Githicon}
+      <Image
+      alt="icon1" src={Githicon}
       width={30}></Image>
       </div>
       <p>/leoocestari</p>
@@ -38,7 +39,8 @@ const Contato = () => {
       <div className={Styles.linkrede}>
       <div className={Styles.boxicon2}>
       <Image src={Linkicon}
-      width={30}></Image>
+      width={30}
+      alt="icon2"></Image>
       </div>
       <p>/leoocestari</p>
       </div>

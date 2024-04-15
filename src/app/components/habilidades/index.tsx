@@ -7,7 +7,7 @@ import TypeScriptIcon from "/public/images/typescript.svg"
 
 
 
-const Habilidades = () => {
+function Habilidades () {
   return(
   <div className={Styles.container}>
     <div className={Styles.header}>
@@ -16,7 +16,8 @@ const Habilidades = () => {
     <div className={Styles.habs}>
     <div className={Styles.card}>
       <div className={Styles.cardimage}>
-      <Image src={Logo} width={100}></Image>
+      <Image src={Logo} width={100}
+      alt="cardimg1"></Image>
       </div>
       <div className={Styles.carddetails}>
       <p>Html, Css, JavaScript</p>
@@ -25,7 +26,8 @@ const Habilidades = () => {
     </div>
     <div className={Styles.card2}>
       <div className={Styles.cardimage}>
-      <Image src={ReactIcon} width={100}></Image>
+      <Image src={ReactIcon} width={100}
+      alt="cardimg2"></Image>
       </div>
       <div className={Styles.carddetails}>
       <p>React</p>
@@ -34,7 +36,8 @@ const Habilidades = () => {
     </div>
     <div className={Styles.card3}>
       <div className={Styles.cardimage}>
-      <Image src={NextIcon} width={100}></Image>
+      <Image src={NextIcon} width={100}
+      alt="cardimg3"></Image>
       </div>
       <div className={Styles.carddetails}>
       <p>Next Js</p>
@@ -43,7 +46,8 @@ const Habilidades = () => {
     </div>
     <div className={Styles.card4}>
       <div className={Styles.cardimage}>
-      <Image src={TypeScriptIcon} width={100}></Image>
+      <Image src={TypeScriptIcon} width={100}
+      alt="cardimg3"></Image>
       </div>
       <div className={Styles.carddetails}>
       <p>TypeScript</p>

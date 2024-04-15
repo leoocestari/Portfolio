@@ -4,12 +4,12 @@ import Link from "next/link";
 import Styles from"./header.module.scss"
 import Button from "../button"
 
-const Header = () => {
+function Header () {
   return (
    <section className={Styles.container}>
     <div className={Styles.logotipo}> 
     <Image src={Logo} 
-    width={60}/>
+    width={60} alt="logo"/>
     </div>
     <nav className={Styles.menu}>
           <Link href="./">Inicio</Link>
