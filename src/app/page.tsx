@@ -37,8 +37,8 @@ export default function Home() {
     <Inicio />
     <Sobre />
     {<Projetos />}
-    {/*<Habilidades />*/}
-    {/*<Contato />*/}
+    {<Habilidades />}
+    {<Contato />}
 
     
     </main>

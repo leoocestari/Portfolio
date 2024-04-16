@@ -1,4 +1,5 @@
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
 
 
 .container {
@@ -7,6 +8,13 @@
   padding-bottom: 100px;
   background-color: #121212;
   display: grid;
+
+  @include Phone{
+    padding-top: 50px;
+    padding-bottom: 75px;
+    
+}
+  
 }
 
 .header{
@@ -19,7 +27,17 @@
 .abacontato{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
+  margin: auto;
   padding-top: 50px;
+
+  @include Phone{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    gap: 32px;
+    
+}
+
+  
 }
 
 .formulario{
@@ -46,6 +64,7 @@
 }
 
 .contatoadicional{
+  
   margin-left: 3rem;
   
   h1{

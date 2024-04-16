@@ -27,7 +27,8 @@ function Projetos() {
       <div className={Styles.projetos}>
         <div className={Styles.projectcard1}>
           <div className={Styles.cardimage}>
-            <Image src={projeto1} width={475} alt='projeto1'></Image>
+            <Image src={projeto1} width={475} alt='projeto1'
+            className='projeto1'></Image>
           </div>
           <div className={Styles.carddetails}>
             <h1>Portfolio 1.0</h1>

@@ -7,6 +7,7 @@
     padding: 0 20.25rem;
     padding-top: 100px;
     height: 100vh;
+    
     background-repeat: no-repeat;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -23,6 +24,10 @@
 
 .text{
 
+    
+
+    
+
     @include Phone{
         text-align: center;
         padding-top: 100px;
@@ -38,6 +43,7 @@ h1{
 
 p{
     @include SizeSubtitle;
+    margin-top: -15px;
     color: #9acd32;
     font-size: 2rem;
     opacity: 0,8;
@@ -46,6 +52,46 @@ p{
     position: relative;
 }
 };
+
+.boxicon{
+        display: grid;
+        cursor: pointer;
+          height: 2.5rem;
+          width: 2.5rem;
+          border-radius: 5px;
+          background-color: rgb(31, 31, 31);
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+          padding: 0.5rem;
+}
+
+.redes{
+    padding-top: 1.1rem;
+    display: flex;
+    
+    gap: 1rem;
+}
+
+.boxicon2{
+    display: grid;
+    cursor: pointer;
+      height: 2.5rem;
+      width: 2.5rem;
+      border-radius: 5px;
+      background-color: rgb(31, 31, 31);
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 0.5rem;
+  }
+  
+      
+
 
 
 

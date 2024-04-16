@@ -16,10 +16,10 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 10px;
   
   @include Phone{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 12px;
   }
 }
 
@@ -27,6 +27,7 @@
 
 .logotipo{
   width: 15px;
+  padding-top: 15px;
 }
 .menu {
   font-family: jetbrains;

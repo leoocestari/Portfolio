@@ -1,4 +1,5 @@
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
 
 .container {
   @include Padding;
@@ -6,6 +7,11 @@
   padding-bottom: 100px;
   background-color: black;
   display:grid;
+  @include Phone{
+    padding-top: 50px;
+    padding-bottom: 75px;
+    
+}
 };
 
 .header{
@@ -17,9 +23,15 @@
 
 .habs{
   padding-top: 100px;
+  gap: 32px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  @include Phone{
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content;
+  }
 }
 
 .card{

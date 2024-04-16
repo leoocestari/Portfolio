@@ -10,6 +10,7 @@
   display:grid;
 
   @include Phone{
+    
     padding-top: 50px;
     padding-bottom: 75px;
     grid-template-columns: 1fr;
@@ -29,14 +30,28 @@
   }
 }
 
+.cardimage{
+  @include Phone{
+    width: 200px;
+    height: 200px;
+    display: none;
+    
+    
+}
+}
+
 .projetos{
 
   padding-top: 100px;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px; 
   @include Phone{
     grid-template-columns: 1fr;
-    grid-template-rows: max-content;
+    align-items: center;
+    text-align: center;
+    margin: auto;
     
 }
   
@@ -44,11 +59,15 @@
 
 .projetos2{
   padding-top: 100px;
+  gap: 15px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   @include Phone{
     grid-template-columns: 1fr;
-    grid-template-rows: max-content;
+    align-items: center;
+    text-align: center;
+    
     
 }
 }
@@ -74,6 +93,7 @@
 
 .projectcard2{
   width: 550px;
+  box-sizing: border-box;
   height: 550px;
   border-radius: 20px;
   background: black;
@@ -134,6 +154,7 @@
   padding-top: 200px;
 
 }
+
 
 .cardimage{
   border-radius: 20px;
