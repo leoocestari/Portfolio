@@ -5,7 +5,7 @@
   @include Padding;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: black;
+  background-color: rgb(11, 11, 11);
   display:grid;
   @include Phone{
     padding-top: 50px;
@@ -26,7 +26,7 @@
   gap: 32px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 
   @include Phone{
       grid-template-columns: 1fr;
@@ -86,6 +86,19 @@
   overflow: visible;
  }
 
+ .card5{
+
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: #121212;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #121212;
+  transition: 0.5s ease-out;
+  overflow: visible;
+ }
+
  .cardimage{
   place-content: center;
   display: grid;
@@ -123,6 +136,11 @@
 }
 
 .card4:hover{
+  animation: botao 1s ease-in-out infinite alternate;
+  animation-iteration-count: infinite;
+}
+
+.card5:hover{
   animation: botao 1s ease-in-out infinite alternate;
   animation-iteration-count: infinite;
 }

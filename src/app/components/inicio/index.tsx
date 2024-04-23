@@ -6,24 +6,36 @@ import Githicon from "/public/images/githicon.svg"
 import Linkicon from "/public/images/linkicon.svg"
 
 
+
 function Inicio () {
   return (
   <section className={Styles.container}>
     <div className={Styles.text}>
-      <h1>Leonardo Cestari</h1>
+      <h1 id="inicio">Leonardo Cestari</h1>
       <p>Desenvolvedor Web</p>
       <div className={Styles.redes}>
       <div className={Styles.boxicon}>
       <Image
+
       alt="icon1" src={Githicon}
-      width={40}
-      height={41}></Image>
+      width={32}
+      height={41}
+      className="invert"
+      style={{ filter: "invert(1)" }}>
+     
+      </Image>
+      
       </div>
-      <div className={Styles.boxicon2}>
+      <div className={Styles.boxicon}>
       <Image
       alt="icon1" src={Linkicon}
-      width={40}
-      height={41}></Image>
+      width={32}
+      height={41}
+      
+      className="invert"
+      
+      style={{ filter: "invert(1)" }}>
+      </Image>
       </div>
       </div>
     </div>

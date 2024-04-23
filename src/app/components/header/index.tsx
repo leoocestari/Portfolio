@@ -9,24 +9,42 @@ function Header () {
    <section className={Styles.container}>
     <div className={Styles.logotipo}> 
     <Image src={Logo} 
-    width={60} alt="logo"/>
+    width={60} alt="logo"
+    className="invert"
+    
+      style={{ filter: "invert(1)" }}
+
+    />
     </div>
     <nav className={Styles.menu}>
-          <Link href="./">Inicio</Link>
+          
+          
+            
+          <ul className={Styles.inicio}>
+          <Link href="#inicio">Inicio</Link>
+          </ul>
+          
+          <ul className={Styles.inicio}>
+          <Link href="#sobre">Sobre</Link>
+          </ul>
+          
+          <ul className={Styles.inicio}>
+          <Link href="#projetos">Projetos</Link>
+          </ul>
+          
+          <ul className={Styles.inicio}>
+          <Link href="#habilidades">Habilidades</Link>
+          </ul>
+          
+          <ul className={Styles.inicio}>
+          <Link href="#contato">Contato</Link>
+          </ul>
 
-          <Link href="./">Sobre</Link>
-
-          <Link href="/">Competencias</Link>
-
-          <Link href="/">Habilidades</Link>
-
-          <Link href="/">Info</Link>
+          
+          
 
     </nav>
-    <div className={Styles.action}>
-      <Button title="Contato" />
-      
-    </div>
+    
 
   </section>
   

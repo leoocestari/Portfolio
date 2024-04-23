@@ -22,7 +22,7 @@ function Projetos() {
 
     <section className={Styles.container}>
       <div className={Styles.text}>
-        <h1>Projetos</h1>
+        <h1 id='projetos'>Projetos</h1>
       </div>
       <div className={Styles.projetos}>
         <div className={Styles.projectcard1}>

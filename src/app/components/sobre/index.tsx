@@ -14,7 +14,7 @@ function Sobre () {
     
     </div>
     <div className={Styles.text}>
-    <h1>Sobre Mim</h1>
+    <h1 id="sobre">Sobre Mim</h1>
     <p>Meu nome é Leonardo Cestari, desde pequeno sempre tive interesse pela
       área da computação, decidi trilhar o caminho da programação. Criando 
       projetos usando o conhecimento adquirido em meus estudos.

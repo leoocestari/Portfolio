@@ -11,12 +11,16 @@
   @include Padding;
   color: aliceblue;
   width: 100%;
-  background-color: black;
+  background-color: rgb(11, 11, 11);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 10px;
+  position: absolute;
+  box-shadow: rgba(61, 61, 61, 0.25) 0px 3px 3px;
+  top: 0px;
+  z-index: 2;
+  
   
   @include Phone{
     padding-bottom: 12px;
@@ -25,24 +29,60 @@
 
 
 
+
+
 .logotipo{
   width: 15px;
   padding-top: 15px;
+  
+  
 }
 .menu {
-  font-family: jetbrains;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
-  color: white;
-  font-weight: 5;
-  font-size: 22px;
-  a + a {
-    margin-left: 38.9px;
-  }
+    display: flex;
+    -webkit-box-pack: justify;
+    gap: 50px;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    font-family: jetbrains;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #000;
+   color: white;
+   font-weight: 5;
+   font-size: 22px;
+  
   @include Phone{
     display: none;
 
   }
+}
+
+.inicio:hover {
+  transform: translateY(-3px);
+}
+.sobre{
+  
+  background-color: #9acd32;
+  transition: 0.5s;
+  opacity: 0.7;
+  cursor: pointer;
+
+}
+
+.inicio{
+  outline: 0 !important;
+  border: 0 !important;
+  background-color: transparent;
+  
+
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.inicio:hover {
+  color: #9acd32;
 }
 
 .action{

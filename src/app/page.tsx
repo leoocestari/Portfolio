@@ -6,7 +6,7 @@ import Inicio from "../app/components/inicio"
 import Sobre from "../app/components/sobre"
 import Projetos from "../app/components/projetos"
 import Habilidades from "../app/components/habilidades"
-import Contato from "../app/components/contato"
+import Contato from "./components/contato"
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
@@ -22,12 +22,6 @@ import 'swiper/css/free-mode';
 import { LogoNodejs } from 'react-ionicons'
 
 
-
-
-
-
-
-
 export default function Home() {
   return (
     
@@ -36,9 +30,9 @@ export default function Home() {
     <Header />
     <Inicio />
     <Sobre />
-    {<Projetos />}
-    {<Habilidades />}
-    {<Contato />}
+    <Projetos />
+    <Habilidades />
+    <Contato />
 
     
     </main>
