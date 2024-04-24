@@ -5,11 +5,21 @@ import ReactIcon from "/public/images/react.svg"
 import NextIcon from "/public/images/next.svg"
 import TypeScriptIcon from "/public/images/typescript.svg"
 import Jsicon from "/public/images/jsicon.svg"
+import Slider from 'react-slick'
+import React from 'react'
 
 
 
 function Habilidades () {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return(
+    <Slider>
   <div className={Styles.container}>
     <div className={Styles.header}>
     <h1 id="habilidades">Habilidades</h1>
@@ -71,6 +81,7 @@ function Habilidades () {
     
     
   </div>
+  </Slider>
   );
 };
 

@@ -2,11 +2,13 @@ import Styles from "./inicio.module.scss"
 import Button from "../button"
 import Desenvolvedor from "/public/images/desenvolvedor.svg"
 import Image from "next/image"
+import ImageLink from "next/image"
 import Githicon from "/public/images/githicon.svg"
 import Linkicon from "/public/images/linkicon.svg"
+import Link from 'next/link'
 
 
-
+  
 function Inicio () {
   return (
   <section className={Styles.container}>
@@ -15,27 +17,29 @@ function Inicio () {
       <p>Desenvolvedor Web</p>
       <div className={Styles.redes}>
       <div className={Styles.boxicon}>
+      <Link href={'https://github.com/leoocestari'}>
       <Image
-
       alt="icon1" src={Githicon}
       width={32}
       height={41}
       className="invert"
       style={{ filter: "invert(1)" }}>
-     
       </Image>
+      </Link>
       
       </div>
       <div className={Styles.boxicon}>
+      <Link href={'https://www.linkedin.com/in/leoocestari/'}>
       <Image
       alt="icon1" src={Linkicon}
       width={32}
       height={41}
       
-      className="invert"
       
+      className="invert"
       style={{ filter: "invert(1)" }}>
       </Image>
+      </Link>
       </div>
       </div>
     </div>

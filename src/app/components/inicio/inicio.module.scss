@@ -56,21 +56,16 @@ p{
 
 .boxicon{
     display: grid;
+    
     cursor: pointer;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.7rem;
+    width: 2.7rem;
     border-radius: 5px;
     background-color: rgb(31, 31, 31);
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    padding: 0.5rem;
-    outline: 0 !important;
-    border: 0 !important;
     transition: all ease-in-out 0.3s;
-    text-decoration: none;
+    
 }
 
 
