@@ -11,9 +11,9 @@ import Link from 'next/link'
   
 function Inicio () {
   return (
-  <section className={Styles.container}>
+  <section id="inicio" className={Styles.container}>
     <div className={Styles.text}>
-      <h1 id="inicio">Leonardo Cestari</h1>
+      <h1>Leonardo Cestari</h1>
       <p>Desenvolvedor Web</p>
       <div className={Styles.redes}>
       <div className={Styles.boxicon}>

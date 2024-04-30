@@ -24,6 +24,7 @@
 }
 
 .text{
+  
   h1{
     font-size: 2.8rem;
     text-align: center;
@@ -41,12 +42,15 @@
 }
 
 .projetos{
+  
 
   padding-top: 100px;
+  padding-bottom: 150px;
   margin: auto;
+  
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px; 
   @include Phone{
     grid-template-columns: 1fr;
     align-items: center;
@@ -57,48 +61,16 @@
   
 }
 
-.projetos2{
-  padding-top: 100px;
-  gap: 15px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  @include Phone{
-    grid-template-columns: 1fr;
-    align-items: center;
-    text-align: center;
-    
-    
-}
-}
 
-.projectcard1{
-  width: 550px;
-  height: 550px;
+.projectcard{
+  width: 450px;
+  height: 400px;
   border-radius: 20px;
-  background: black;
-  position: relative;
-  padding: 1.8rem;
-  border: 2px solid #121212;
-  transition: 0.5s ease-out;
-  overflow: visible;
-
-  @include Phone{
-    width: 250px;
-    height: 250px;
-    
-}
   
-}
-
-.projectcard2{
-  width: 550px;
-  box-sizing: border-box;
-  height: 550px;
-  border-radius: 20px;
-  background: black;
-  position: relative;
-  padding: 1.8rem;
+  
+  
+  
+  
   border: 2px solid #121212;
   transition: 0.5s ease-out;
   overflow: visible;
@@ -110,66 +82,51 @@
 }
 }
 
-.projectcard3{
-  width: 550px;
-  height: 550px;
-  border-radius: 20px;
-  background: black;
-  position: relative;
-  padding: 1.8rem;
-  border: 2px solid #121212;
-  transition: 0.5s ease-out;
-  overflow: visible;
-
-  @include Phone{
-    width: 250px;
-    height: 250px;
-    
-}
-}
-
-.image{
-  width: 250vh;
-}
-
-.projectcard4{
-  width: 550px;
-  height: 550px;
-  border-radius: 20px;
-  background: black;
-  position: relative;
-  padding: 1.8rem;
-  border: 2px solid #121212;
-  transition: 0.5s ease-out;
-  overflow: visible;
-
-  @include Phone{
-    width: 250px;
-    height: 250px;
-    
-}
-}
-
-.acessar{
-  padding-top: 200px;
-
+.projeto1{
+  background-size: cover;
 }
 
 
 .cardimage{
-  border-radius: 20px;
-  border: 2px solid #121212;
-  background-color: #121212;
+  
+  background: url("/public/images/portf.jpg");
+  background-size: cover;
   padding-top: 50px;
 
 
+  box-shadow: yellowgreen 0px 0px 10px;
  text-align: center;
   height: 380px;
   align-items: center;
   
+  
 }
 
 .carddetails{
-  padding-top: 25px;
+  
+  height: 150px;
+  
+  
+  
+  box-shadow: yellowgreen 0px 0px 15px;
+  
+  background: black;
+  
+  padding: 15px;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  align-items: center;
+  
+  
 
+}
+
+.buttoncard{
+  padding-top: 25px;
+  
+  
+  
+  margin: 0 auto;
+
+  align-items: center;
 }

@@ -25,13 +25,19 @@
   padding-top: 100px;
   gap: 32px;
   margin: auto;
-  display: grid;
   grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  
 
   @include Phone{
       grid-template-columns: 1fr;
       grid-template-rows: max-content;
   }
+}
+
+.slick-slide{
+  grid-template-columns: repeat(2, 3fr);
+  display: grid;
 }
 
 .card{
@@ -170,3 +176,8 @@
   }
 }
 
+.slick-slide > div {
+  margin: 0 10px;
+  text-align: center;
+  align-items: center;
+}

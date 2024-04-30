@@ -9,11 +9,15 @@ import Habilidades from "../app/components/habilidades"
 import Contato from "./components/contato"
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import Slider from 'react-slick'
+
 
 
 import { register } from 'swiper/element/bundle'
 
 register();
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

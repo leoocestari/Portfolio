@@ -5,26 +5,25 @@ import ReactIcon from "/public/images/react.svg"
 import NextIcon from "/public/images/next.svg"
 import TypeScriptIcon from "/public/images/typescript.svg"
 import Jsicon from "/public/images/jsicon.svg"
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 import React from 'react'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
+
 
 
 
 function Habilidades () {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+ 
   return(
-    <Slider>
-  <div className={Styles.container}>
+  <section id="habilidades" className={Styles.container}>
     <div className={Styles.header}>
-    <h1 id="habilidades">Habilidades</h1>
+    <h1>Habilidades</h1>
     </div>
+    
     <div className={Styles.habs}>
+    
     <div className={Styles.card}>
       <div className={Styles.cardimage}>
       <Image src={Logo} width={100}
@@ -77,11 +76,14 @@ function Habilidades () {
       <p>Biblioteca de javascript para criação de interfaces em front-end</p>
       </div>
     </div>
+    
     </div>
     
     
-  </div>
-  </Slider>
+    
+    
+  </section>
+ 
   );
 };
 
