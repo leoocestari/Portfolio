@@ -2,14 +2,14 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import Header from "../app/components/header"
-import Inicio from "../app/components/inicio"
+import Inicio from "./components/inicio"
 import Sobre from "../app/components/sobre"
 import Projetos from "../app/components/projetos"
 import Habilidades from "../app/components/habilidades"
 import Contato from "./components/contato"
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Slider from 'react-slick'
+import Slider from "react-dom";
 
 
 

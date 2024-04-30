@@ -3,6 +3,7 @@ import Image from "next/image"
 import Logo from "/public/images/html.svg"
 import ReactIcon from "/public/images/react.svg"
 import NextIcon from "/public/images/next.svg"
+import SassIcon from "/public/images/sass.svg"
 import TypeScriptIcon from "/public/images/typescript.svg"
 import Jsicon from "/public/images/jsicon.svg"
 import Slider from 'react-slick';
@@ -34,9 +35,9 @@ function Habilidades () {
       <p>É a trindade base da programação web</p>
       </div>
     </div>
-    <div className={Styles.card2}>
+    <div className={Styles.card}>
       <div className={Styles.cardimage}>
-      <Image src={Jsicon} width={100}
+      <Image src={SassIcon} width={100}
       alt="cardimg2"></Image>
       </div>
       <div className={Styles.carddetails}>
@@ -44,9 +45,9 @@ function Habilidades () {
       <p>Biblioteca de javascript para criação de interfaces em front-end</p>
       </div>
     </div>
-    <div className={Styles.card3}>
+    <div className={Styles.card}>
       <div className={Styles.cardimage}>
-      <Image src={NextIcon} width={100}
+      <Image src={Jsicon} width={100}
       alt="cardimg3"></Image>
       </div>
       <div className={Styles.carddetails}>
@@ -54,7 +55,7 @@ function Habilidades () {
       <p>Estrutura web de desenvolvimento front-end React de código aberto</p>
       </div>
     </div>
-    <div className={Styles.card4}>
+    <div className={Styles.card}>
       <div className={Styles.cardimage}>
       <Image src={TypeScriptIcon} width={100}
       alt="cardimg3"></Image>
@@ -66,7 +67,18 @@ function Habilidades () {
 
     </div>
 
-    <div className={Styles.card5}>
+    <div className={Styles.card}>
+      <div className={Styles.cardimage}>
+      <Image src={NextIcon} width={100}
+      alt="cardimg5"></Image>
+      </div>
+      <div className={Styles.carddetails}>
+      <p>React</p>
+      <p>Biblioteca de javascript para criação de interfaces em front-end</p>
+      </div>
+    </div>
+    
+    <div className={Styles.card}>
       <div className={Styles.cardimage}>
       <Image src={ReactIcon} width={100}
       alt="cardimg5"></Image>

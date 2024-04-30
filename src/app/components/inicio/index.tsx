@@ -14,7 +14,10 @@ function Inicio () {
   <section id="inicio" className={Styles.container}>
     <div className={Styles.text}>
       <h1>Leonardo Cestari</h1>
+      
       <p>Desenvolvedor Web</p>
+      
+      
       <div className={Styles.redes}>
       <div className={Styles.boxicon}>
       <Link href={'https://github.com/leoocestari'}>
