@@ -28,6 +28,7 @@
   margin: auto;
   grid-template-columns: repeat(3, 1fr);
   display: grid;
+  
   justify-content: center;
   
 
@@ -45,6 +46,7 @@
 .card{
 
   width: 250px;
+  
   height: 350px;
   border-radius: 20px;
   background: #121212;
