@@ -33,9 +33,9 @@ function Projetos() {
       <div className={Styles.projetos}>
         <div className={Styles.projectcard}>
           <div className={Styles.cardimage}>
-            <Image src={imgp} width={400}  alt='projeto1'
+            <Image src={imgp}   alt='projeto1'
             className='projeto1'
-            style={{  }}></Image>
+            style={{ width: "100%", height: "100%", borderRadius:"15px" }}></Image>
           </div>
           <div className={Styles.carddetails}>
             <h1>Portfolio 1.0</h1>
@@ -51,25 +51,22 @@ function Projetos() {
 
         <div className={Styles.projectcard}>
           <div className={Styles.cardimage}>
-            <Image src={Construindo} width={350} alt='projeto1'></Image>
+            <Image src={Construindo}  alt='projeto1'
+            style={{ width: "100%", height: "100%", borderRadius:"15px" }}></Image>
           </div>
           <div className={Styles.carddetails}>
             <h1>Em andamento</h1>
           </div>
-          
-
           </div>
           
         <div className={Styles.projectcard}>
           <div className={Styles.cardimage}>
-          <Image src={Construindo} width={300} alt='projeto1'></Image>
+          <Image src={Construindo}   alt='projeto1'
+          style={{ width: "100%", height: "100%", borderRadius:"15px" }}></Image>
       </div> 
       <div className={Styles.carddetails}>
             <h1>Em andamento</h1>
           </div>
-          
-
-          
         </div>
         </div>
           

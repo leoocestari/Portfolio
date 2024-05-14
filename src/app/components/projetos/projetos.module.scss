@@ -19,6 +19,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: max-content;
 }
+  @include Tablet{
+    padding-top: 50px;
+    padding-bottom: 75px;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+  
+  
+  
+  
+}
 }
 
 .title{
@@ -39,8 +49,9 @@
     width: 200px;
     height: 200px;
     display: none;
-    
-    
+}
+ @include Tablet{
+  
 }
 }
 
@@ -50,10 +61,6 @@
   padding-top: 100px;
   padding-bottom: 200px;
   
-    
-    
-  
-  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px; 
@@ -62,7 +69,13 @@
     align-items: center;
     text-align: center;
     margin: auto;
-    
+}
+@include Tablet{
+  grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    gap: 150px;
 }
   
 }
@@ -94,12 +107,11 @@
   
   background: url("/public/images/portf.jpg");
   background-size: cover;
-  padding-top: 50px;
-
-
-  box-shadow: yellowgreen 0px 0px 10px;
+  border-radius: 15px;
+  height: 75%;
+  width: 100%;
  text-align: center;
-  height: 380px;
+  
   align-items: center;
   
   
@@ -109,12 +121,8 @@
   
   height: 150px;
   
-  
-  
-  box-shadow: yellowgreen 0px 0px 15px;
-  
   background: black;
-  
+  border-radius: 15px;
   padding: 15px;
   transition: 0.5s ease-out;
   overflow: visible;

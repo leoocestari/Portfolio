@@ -27,42 +27,46 @@ function Habilidades () {
     
     <div className={Styles.card}>
       <div className={Styles.cardimage}>
-      <Image src={Logo} width={100}
+      <Image src={Logo} width={120}
       alt="cardimg1"></Image>
+      <p>HTML</p>
       </div>
       <div className={Styles.carddetails}>
-      <p>Html, Css, JavaScript</p>
-      <p>É a trindade base da programação web</p>
+      
+      
       </div>
     </div>
     <div className={Styles.card}>
       <div className={Styles.cardimage}>
-      <Image src={SassIcon} width={100}
+      <Image src={SassIcon} width={120}
       alt="cardimg2"></Image>
+      <p>SASS</p>
       </div>
       <div className={Styles.carddetails}>
-      <p>React</p>
-      <p>Biblioteca de javascript para criação de interfaces em front-end</p>
+      
+      
       </div>
     </div>
     <div className={Styles.card}>
       <div className={Styles.cardimage}>
       <Image src={Jsicon} width={100}
       alt="cardimg3"></Image>
+      <p>JAVASCRIPT</p>
       </div>
       <div className={Styles.carddetails}>
-      <p>Next Js</p>
-      <p>Estrutura web de desenvolvimento front-end React de código aberto</p>
+      
+      
       </div>
     </div>
     <div className={Styles.card}>
       <div className={Styles.cardimage}>
       <Image src={TypeScriptIcon} width={100}
       alt="cardimg3"></Image>
+      <p>TYPESCRIPT</p>
       </div>
       <div className={Styles.carddetails}>
-      <p>TypeScript</p>
-      <p>É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.</p>
+      
+      
       </div>
 
     </div>
@@ -71,22 +75,19 @@ function Habilidades () {
       <div className={Styles.cardimage}>
       <Image src={NextIcon} width={100}
       alt="cardimg5"></Image>
+      <p>NEXT</p>
       </div>
-      <div className={Styles.carddetails}>
-      <p>React</p>
-      <p>Biblioteca de javascript para criação de interfaces em front-end</p>
-      </div>
+      
     </div>
     
     <div className={Styles.card}>
       <div className={Styles.cardimage}>
       <Image src={ReactIcon} width={100}
       alt="cardimg5"></Image>
+      <p>REACT</p>
       </div>
-      <div className={Styles.carddetails}>
-      <p>React</p>
-      <p>Biblioteca de javascript para criação de interfaces em front-end</p>
-      </div>
+      
+      
     </div>
     
     </div>

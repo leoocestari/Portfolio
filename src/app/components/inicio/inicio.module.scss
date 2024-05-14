@@ -4,12 +4,16 @@
 
 .container {
     @include Padding;
-    padding: 0 20.25rem;
-    padding-top: 250px;
+    gap: 80px;
     height: 100vh;
     background-repeat: no-repeat;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+
+    
     width: 100%;
     
 
@@ -51,15 +55,20 @@ p{
     font-size: 2rem;
     opacity: 0,8;
     text-shadow: yellowgreen 0px 0px 10px;
-
+    display: flex;
+    
     overflow: hidden;
-    width: 14ch;
+    max-width: 14.2ch;
     
 
     animation: mark .5s step-end infinite, write 3s steps(22, end)  ;
 
     @include Phone{
-        width: 100%;
+        max-width: 450px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+
     }
     
     
@@ -80,11 +89,19 @@ p{
     }
 
     85%{
-        width: 14ch;
+        width: 14.2ch;
+        @include Phone{
+            width: 0;
+    
+        }
     }
 
     100%{
-        width: 14ch;
+        width: 14.2ch;
+        @include Phone{
+            max-width: 0;
+    
+        }
     }
 }
 };
