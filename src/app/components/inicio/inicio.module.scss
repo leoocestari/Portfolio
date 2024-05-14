@@ -58,10 +58,10 @@ p{
     display: flex;
     
     overflow: hidden;
-    max-width: 14.2ch;
+    max-width: 14.5ch;
     
 
-    animation: mark .5s step-end infinite, write 3s steps(22, end)  ;
+    animation: mark .5s step-end infinite, write 3.5s steps(22, end)  ;
 
     @include Phone{
         max-width: 450px;
