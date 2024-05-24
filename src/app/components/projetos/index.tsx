@@ -4,18 +4,20 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Styles from './carousel.module.scss';
+import Link from 'next/link'
 
 interface Project {
   id: number;
   title: string;
   description: string;
   image: string;
+  url: string;
 }
 
 const projects: Project[] = [
-  { id: 1, title: 'Projeto 1', description: 'Descrição do Projeto 1', image: '/images/portf.jpg' },
-  { id: 2, title: 'Projeto 2', description: 'Descrição do Projeto 2', image: '/images/portf.jpg' },
-  { id: 3, title: 'Projeto 3', description: 'Descrição do Projeto 3', image: '/images/portf.jpg' },
+  { id: 1, title: 'Portfolio', description: 'HTML SASS TYPESCRIPT NEXT', image: '/images/projeto12.png', url: 'https://leoocestari.vercel.app/' },
+  { id: 2, title: 'Convite de Casamento', description: 'HTML SASS TYPESCRIPT ANGULAR', image: '/images/projeto13.png', url: 'https://adrielehannaty.vercel.app/convite' },
+  { id: 3, title: 'Gerador de Nota Fiscal', description: 'HTML SASS TYPESCRIPT ANGULAR', image: '/images/projeto15.png', url: 'https://lumo-utils.vercel.app/invoice-generator'},
   
   // Adicione mais projetos conforme necessário
 ];
@@ -35,9 +37,11 @@ const Carousel: React.FC = () => {
       <Slider {...settings}>
         {projects.map(project => (
           <div key={project.id} className={Styles.slide}>
+            <Link href={project.url}>
             <img src={project.image} alt={project.title} className={Styles.image} />
             <h3 className={Styles.title}>{project.title}</h3>
             <p className={Styles.description}>{project.description}</p>
+            </Link>
           </div>
         ))}
       </Slider>
