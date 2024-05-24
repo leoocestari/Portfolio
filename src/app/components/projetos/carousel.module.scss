@@ -1,0 +1,40 @@
+@import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
+
+.carouselContainer {
+  @include Padding;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.titleheader{
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 3rem;
+  
+
+}
+
+.slide {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+}

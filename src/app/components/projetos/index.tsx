@@ -1,80 +1,48 @@
-import Styles from './projetos.module.scss'
-import Image from 'next/image';
-import projeto1 from "/public/images/projeto1.png"
-import carrossel2 from "/public/images/carrossel2.svg"
-import Button from "../button"
-import Construindo from "/public/images/construindo.svg"
-import carrossel3 from "/public/images/carrossel3.svg"
-import { ArrowForwardOutline } from 'react-ionicons'
+// components/Carousel.tsx
+import React from 'react';
 import Slider from 'react-slick';
-import React from 'react'
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import imgp from "/public/images/portf.jpg"
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Styles from './carousel.module.scss';
 
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+}
 
-
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, FreeMode, EffectCoverflow, Navigation } from 'swiper/modules';
-import { Black_And_White_Picture } from 'next/font/google';
-
-
-
-function Projetos() {
+const projects: Project[] = [
+  { id: 1, title: 'Projeto 1', description: 'Descrição do Projeto 1', image: '/images/portf.jpg' },
+  { id: 2, title: 'Projeto 2', description: 'Descrição do Projeto 2', image: '/images/portf.jpg' },
+  { id: 3, title: 'Projeto 3', description: 'Descrição do Projeto 3', image: '/images/portf.jpg' },
   
+  // Adicione mais projetos conforme necessário
+];
 
+const Carousel: React.FC = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
 
   return (
-
-    <section id='projetos' className={Styles.container}>
-      <div className={Styles.text}>
-        <h1>Projetos</h1>
-      </div>
-      <div className={Styles.projetos}>
-        <div className={Styles.projectcard}>
-          <div className={Styles.cardimage}>
-            <Image src={imgp}   alt='projeto1'
-            className='projeto1'
-            style={{ width: "100%", height: "100%", borderRadius:"15px" }}></Image>
+    <div className={Styles.carouselContainer}>
+      <h1 className={Styles.titleheader}>Projetos</h1>
+      <Slider {...settings}>
+        {projects.map(project => (
+          <div key={project.id} className={Styles.slide}>
+            <img src={project.image} alt={project.title} className={Styles.image} />
+            <h3 className={Styles.title}>{project.title}</h3>
+            <p className={Styles.description}>{project.description}</p>
           </div>
-          <div className={Styles.carddetails}>
-            <h1>Portfolio 1.0</h1>
-            <p>
-              SASS, TYPESCRIPT, REACT,  NEXT  
-            </p>
-            
-          </div>
-          <div className={Styles.buttoncard}>
-            <Button title="Acessar" />
-          </div>
-        </div>
-
-        <div className={Styles.projectcard}>
-          <div className={Styles.cardimage}>
-            <Image src={Construindo}  alt='projeto1'
-            style={{ width: "100%", height: "100%", borderRadius:"15px" }}></Image>
-          </div>
-          <div className={Styles.carddetails}>
-            <h1>Em andamento</h1>
-          </div>
-          </div>
-          
-        <div className={Styles.projectcard}>
-          <div className={Styles.cardimage}>
-          <Image src={Construindo}   alt='projeto1'
-          style={{ width: "100%", height: "100%", borderRadius:"15px" }}></Image>
-      </div> 
-      <div className={Styles.carddetails}>
-            <h1>Em andamento</h1>
-          </div>
-        </div>
-        </div>
-          
-      
-
-    </section>
+        ))}
+      </Slider>
+    </div>
   );
-
 };
 
-export default Projetos 
+export default Carousel;
