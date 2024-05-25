@@ -3,17 +3,18 @@
 
 .container {
   @include Padding;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 120px;
   display:grid;
   justify-content: center;
-  width: 1500px;
+  width: 1100px;
   border-radius: 25px;
   margin: auto;
-  background-color: black;
+  background-color: #2C243B;
   
   @include Phone{
     padding-top: 50px;
+    width: 100%;
     padding-bottom: 75px;
     
     
@@ -51,17 +52,17 @@
 
 .card{
 
-  width: 250px;
+  width: 160px;
   
-  height: 250px;
+  height: 160px;
   border-radius: 30px;
-  background: #121212;
+  background: #2C243B;
   position: relative;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  border: 2px solid #121212;
+  
   transition: 0.5s ease-out;
   overflow: visible;
 }

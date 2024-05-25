@@ -50,11 +50,11 @@ p{
     @include SizeSubtitle;
     margin-top: -15px;
     white-space: nowrap;
-    border-right: 3px solid #9acd32;
-    color: #9acd32;
+    border-right: 3px solid #9e84cf;
+    color: #9e84cf;
     font-size: 2rem;
     opacity: 0,8;
-    text-shadow: yellowgreen 0px 0px 10px;
+    text-shadow: #9e84cf 0px 0px 10px;
     display: flex;
     
     overflow: hidden;
@@ -113,7 +113,7 @@ p{
     height: 2.7rem;
     width: 2.7rem;
     border-radius: 5px;
-    background-color: rgb(31, 31, 31);
+    background-color: #171023;
     display: flex;
     justify-content: center;
     transition: all ease-in-out 0.3s;
@@ -122,7 +122,7 @@ p{
 
 
 .boxicon:hover{
-    background-color: #9acd32;
+    background-color: #9e84cf;
 }
 
 .redes{
