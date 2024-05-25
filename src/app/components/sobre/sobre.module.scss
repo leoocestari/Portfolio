@@ -58,6 +58,7 @@
   h1{
     font-weight: bold;
     font-size: 3.6rem;
+    font-style: italic;
     @include Phone{
       text-align: center;
       align-items: center;
@@ -65,6 +66,10 @@
       display: flex;
       font-size: 2rem;
   }
+  }
+
+  a{
+    color: #9e84cf;
   }
 
   p{

@@ -16,7 +16,7 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { id: 1, title: 'Portfolio', description: 'HTML SASS TYPESCRIPT NEXT', image: '/images/projeto12.png', url: 'https://leoocestari.vercel.app/' },
+  { id: 1, title: 'Portfolio', description: 'HTML SASS TYPESCRIPT NEXT REACT', image: '/images/projeto12.png', url: 'https://leoocestari.vercel.app/' },
   { id: 2, title: 'Convite de Casamento', description: 'HTML SASS TYPESCRIPT ANGULAR', image: '/images/projeto13.png', url: 'https://adrielehannaty.vercel.app/convite' },
   { id: 3, title: 'Gerador de Nota Fiscal', description: 'HTML SASS TYPESCRIPT ANGULAR', image: '/images/projeto15.png', url: 'https://lumo-utils.vercel.app/invoice-generator'},
   
@@ -41,7 +41,7 @@ const Carousel: React.FC = () => {
   };
 
   return (
-    <div className={Styles.carouselContainer}>
+    <div id='projetos'className={Styles.carouselContainer}>
       <h1 className={Styles.titleheader}>Projetos</h1>
       <Slider {...settings}>
         {projects.map(project => (

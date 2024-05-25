@@ -1,6 +1,6 @@
 import Styles from "./inicio.module.scss"
 import Button from "../button"
-import Desenvolvedor from "/public/images/desenvolvedor.svg"
+import Desenvolvedor from "/public/images/desenv3.svg"
 import Image from "next/image"
 import ImageLink from "next/image"
 import Githicon from "/public/images/githicon.svg"
@@ -49,7 +49,7 @@ function Inicio () {
     <div className={Styles.image}>
     <Image src={Desenvolvedor} alt="fundo"
     width={500} 
-    height={350}
+    height={400}
     />
     </div>
   </section>

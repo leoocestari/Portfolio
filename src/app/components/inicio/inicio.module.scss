@@ -89,7 +89,7 @@ p{
     }
 
     85%{
-        width: 14.2ch;
+        width: 15ch;
         @include Phone{
             width: 0;
     
@@ -97,7 +97,7 @@ p{
     }
 
     100%{
-        width: 14.2ch;
+        width: 15ch;
         @include Phone{
             max-width: 0;
     
