@@ -41,8 +41,16 @@
 h1{
     @include SizeTitle;
     margin: 0;
-    color: #ffffff;
+    
     font-weight: bold;
+    background: linear-gradient(to bottom right, #fff 40% , #9e84cf, #171023);
+    display: inline-block;
+    /*Recorte o fundo até o texto*/
+    -webkit-background-clip: text;
+    background-clip: text;
+  
+    /*Defina a cor do texto para transparente*/
+    color: transparent;
 }
 
 
@@ -58,7 +66,7 @@ p{
     display: flex;
     
     overflow: hidden;
-    max-width: 14.5ch;
+    max-width: 15ch;
     
 
     animation: mark .5s step-end infinite, write 3.5s steps(22, end)  ;

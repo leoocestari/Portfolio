@@ -6,7 +6,8 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #2C243B;
-  display:grid;
+  display: flex;
+  flex-direction: row;
   grid-template-columns: repeat(2, 1fr);
   width: 1800px;
   border-radius: 25px;
@@ -55,6 +56,8 @@
 
 .text{
   margin-top: 8px 0;
+  
+  
   h1{
     font-weight: bold;
     font-size: 3.6rem;
@@ -63,6 +66,7 @@
       text-align: center;
       align-items: center;
       justify-content: center;
+      gap: 5px;
       display: flex;
       font-size: 2rem;
   }
@@ -87,6 +91,18 @@
     @include Phone{
       font-size: 1.2rem;
       text-align: center;
+      justify-content: center;
   }
+  }
+}
+
+.boxicon{
+  gap: 15px;
+  padding-top: 40px;
+  
+  display: flex;
+
+  @include Phone{
+    justify-content: center;
   }
 }
